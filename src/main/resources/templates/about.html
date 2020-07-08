@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Slog Business Bootstrap Responsive Template | About :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Slog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet"> -->
+    <!-- //Fonts -->
+
+</head>
+
+<body>
+	
+	<table id="table"></table>
+<script>
+	$('#table').bootstrapTable({
+    url: 'data1.json',
+    columns: [{
+        field: 'id',
+        title: 'Item ID'
+    }, {
+        field: 'name',
+        title: 'Item Name'
+    }, {
+        field: 'price',
+        title: 'Item Price'
+    }, ]
+});
+	
+</script>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <!-- header -->
+        <header class="py-1">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h1>
+                        <a class="navbar-brand" href="index.html"><i class="fa fa-ravelry" aria-hidden="true"></i></a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+											<span class="navbar-toggler-icon"></span>
+										</button>
+										<h6 style="color: white;padding-left: 20px;">股票分析与预测</h6>
+								
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-4 m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html">简介 <span class="sr-only">(current)</span></a>
+                            </li>
+                            
+														<li class="nav-item">
+																<a class="nav-link" href="page6_02">个股数据</a>
+														</li>
+														
+														<li class="nav-item">
+																<a class="nav-link" href="list1_01">长期榜</a>
+														</li>
+														
+														<li class="nav-item">
+																<a class="nav-link" href="list4">新高榜</a>
+														</li>
+														<li class="nav-item">
+																<a class="nav-link" href="list5_01">连续榜</a>
+														</li>
+														<li class="nav-item">
+																<a class="nav-link" href="list2_01">地区榜</a>
+														</li>
+														<li class="nav-item">
+																<a class="nav-link" href="list3_01">行业榜</a>
+														</li>
+														 
+                        </ul>
+                       <div class="header-right">
+                       	<form class="form-inline">
+                       		<input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
+													
+                       		<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="page7_02.html">搜索</a></button>
+													
+                       	</form>
+                       	<!-- <a href="signin.html" class="signin mr-4"> Sign in <i class="fas fa-sign-in-alt"></i></a>
+                       		<a href="register.html" class="contact">Get Started</a> -->
+                       </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+    </div>
+    <!--/ab -->
+    <!-- banner-w3layouts -->
+    <section class="ab-info-main py-md-5 py-5">
+        <div class="container py-md-5 py-5">
+            <div class="ab-info-grids pt-md-5 pt-3">
+                <div class="ab-info pt-md-5 pt-3 text-center">
+                    <h3 class="tittle text-uppercase inner-tittle" data-aos="fade-up">股票分析与预测</h3>
+                    <h4 class="mb-3" data-aos="fade-up">Stock analysis and forecastt</h4>
+                    <div class="row my-md-5">
+                        <p class="mb-4 col-md-6" data-aos="fade-up">
+                        	&nbsp;&nbsp;&nbsp;长时间以来,关于金融股票行业的预测问题一直都是人们所关注的焦点，股票价格的波动变化影响着社会经济生活中的方方面面。传统的股票预测算法通过历史股票数据中抽取相应的特征从而达到对未来数据预测的效果。然而在股票市场中，行情的变化与国家的宏观经济发展，法律法规的制定，公司的运营，股民的信心等等都有关联。因此想要单纯的基于历史数据对股价进行准确的预测可以说是难上难。
+						
+						</p>
+
+
+                        <p class="mb-4 col-md-6" data-aos="fade-up">&nbsp;&nbsp;在本站中我们将着重考虑历史数据及上市公司近期舆情对股价波动的影响,我们首先建立了基于HoltWinters的时间序列模型对未来股价进行初步预测，同时基于LSTM模型对每日爬取到的最新的股票舆论数据进行情感分析，并将将分析结果作用于最近的股票走势预测，通过采集更多维度的数据进行分析，以求达到更为合理的预测效果。</p>
+
+                    </div>
+                    <img src="images/banner.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/counter-->
+    <section class="stats py-lg-5 py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number" data-to="5" data-speed="1500"></h3>
+                        <p class="count-text ">持续统计</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number" data-to="46" data-speed="1500"></h3>
+                        <p class="count-text ">收入行业</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number" data-to="1100000" data-speed="1500"></h3>
+                        <p class="count-text ">数据量</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+                        <h3 class="timer count-title count-number" data-to="3565" data-speed="1500"></h3>
+                        <p class="count-text ">股票量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//counter-->
+    <!-- //banner-w3layouts -->
+    <section class="about py-lg-5 py-md-5 py-3">
+        <div class="container py-md-3">
+            <div class="inner-sec-wthree py-lg-5 py-3">
+                <h3 class="tittle text-uppercase text-center mb-lg-5 mb-3"><span class="sub-tittle"></span> 功能模块</h3>
+                <div class="feature-grids row mb-lg-5 mb-3">
+                    <div class="col-md-4 p-0" data-aos="fade-up">
+                        <div class="bottom-gd p-5">
+                            <h3 class="my-3"> <span class="fa fa-crosshairs" aria-hidden="true"></span> 股票统计与排名</h3>
+                            <p>对股票信息进行分析，按地区、行业、以及涨跌情况进行统计与排名，生成地区涨跌榜、行业涨跌榜、长期涨跌榜以及近期新涨跌，使得股民更加直观有效的获得信息。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0" data-aos="fade-up">
+                        <div class="bottom-gd2-active p-5">
+                            <h3 class="my-3"> <span class="fa fa-clone" aria-hidden="true"></span> 股票预测</h3>
+                            <p>根据行业股票长期发展动向，预测行业发展前景。例，对行业近三百天的平均股价进行分析，预测发展走势；对股票信息进行分析，预测股价涨跌情况。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0" data-aos="fade-up">
+                        <div class="bottom-gd p-5">
+                            <h3 class="my-3"> <span class="fa fa-laptop" aria-hidden="true"></span> 股票回测</h3>
+                            <p>将近期数据和股票的历史数据进行相似度对比，根据对比历史上的股票走势，找到和现在走势相近的历史时期，统计在历史上于目前类似的情况下买入股票的盈亏情况。</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- services -->
+                <div class="fetured-info pt-lg-5">
+                    <h3 class="tittle text-uppercase text-center my-lg-5 my-3"><span class="sub-tittle"></span> 技术支持</h3>
+                    <div class="row fetured-sec mt-lg-5">
+                        <div class="col-lg-6 serv_bottom">
+                            <div class="featured-left text-center">
+                                <div class="bottom-gd fea p-5 my-3" data-aos="fade-left">
+                                    <span class="fa fa-lightbulb-o" aria-hidden="true"></span>
+                                    <h3 class="my-3 text-uppercase">预测算法</h3>
+                                    <p class="px-lg-3">首先是时间序列算法（三次指数平滑）股票预测近期股价，然后利用lstm模型对近期股票进行舆论分析，对预测值进行第一次修正，然后利用股票所在的行业的整体走势及大盘近期的整体走势对模型进行二次修正，最后得出预测值。</p>
+                                </div>
+                                <div class="bottom-gd fea active p-5" data-aos="fade-left">
+                                    <span class="fa fa-laptop" aria-hidden="true"></span>
+                                    <h3 class="my-3 text-uppercase">股票回测</h3>
+                                    <p>将近期数据和股票的历史数据进行相似度对比，根据对比历史上的股票走势，找到和现在走势相近的历史时期，统计在历史上于目前类似的情况下买入股票的盈亏情况。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <img src="images/img1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- //services -->
+            </div>
+        </div>
+    </section>
+    <!-- //ab -->
+
+ 
+ 
+    <!--footer -->
+    <footer>
+        <section class="footer footer_1its py-5">
+            <div class="container py-md-4">
+
+                <div class="row footer-top mb-md-5 mb-4">
+                    <div class="col-lg-4 col-md-6 footer-grid_section_1its" data-aos="fade-right">
+                        <div class="footer-title-w3ls">
+                            <h3>Address</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Address : 山东省淄博市张店区山东理工大学</p>
+                            <p>Phone : +12 123456789</p>
+                            <p>Email : <a href="mailto:info@example.com">123456789@qq.com</a></p>
+                            <p>Fax : +12 123456789</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its">
+                        <div class="footer-title-w3ls">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="row">
+                            <ul class="col-6 links">
+                                <li><a href="about.html">Why Choose Us </a></li>
+                                <li><a href="about.html">Overview </a></li>
+                                <li><a href="https://www.echartsjs.com/zh/index.html">Apache EChars</a></li>
+
+                                <li><a href="https://www.thymeleaf.org/">Thymeleaf</a></li>
+                                <li><a href="https://v4.bootcss.com/">Bootstrap4 </a></li>
+                            </ul>
+                            <ul class="col-6 links">
+                                <li><a href="https://www.scala-lang.org/">Scala</a></li>
+                                <li><a href="http://spark.apache.org/">Spark</a></li>
+                                <li><a href="http://hadoop.apache.org/">Apache Hadoop </a></li>
+                                <li><a href="https://spring.io/">Spring </a></li>
+                                <li><a href="https://hbase.apache.org/">Apache HBase </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its" data-aos="fade-left">
+                        <div class="footer-title-w3ls">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                            <form action="#" method="post">
+                                <input type="email" name="Email" placeholder="Enter your email..." required="">
+                                <button class="btn1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                <div class="clearfix"> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-grid_section text-center">
+                    <div class="footer-title-w3ls mb-3" data-aos="fade-up">
+                        <a href="index.html" class="text-uppercase"><i class="fa fa-ravelry" aria-hidden="true"></i> <span style="font-size: 30px;">股票分析与预测</span></a>
+                    </div>
+                    <div class="footer-text">
+                       
+                    </div>
+                    <ul class="social_section_1info" data-aos="fade-up">
+                        <li class="mb-2 facebook"><a href="#"><i class="fa fa-facebook mr-1"></i>facebook</a></li>
+                        <li class="mb-2 twitter"><a href="#"><i class="fa fa-twitter mr-1"></i>twitter</a></li>
+                        <li class="google"><a href="#"><i class="fa fa-google-plus mr-1"></i>google</a></li>
+                        <li class="linkedin"><a href="#"><i class="fa fa-linkedin mr-1"></i>linkedin</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+    <!-- //footer -->
+
+    <!-- copy-w3layoutsright -->
+    <div class="cpy-right text-center py-3">
+        <p class="copy-w3layouts">© 2019 股票分析与预测. All rights reserved | SDUT by
+        </p>
+    </div>
+    
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!--/aos -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+
+    </script>
+    <!--//aos -->
+    <!--/counter-->
+    <script src="js/counternew.js"></script>
+    <!--//counter-->
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

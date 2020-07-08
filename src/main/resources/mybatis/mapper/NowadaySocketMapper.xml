@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.skh.springboot.mapper.NowadaySocketMapper">
+    <select id="getAll" resultType="org.skh.springboot.bean.NowadaySocket">
+        select * from latest where a != ""
+    </select>
+    <select id="getscore" resultType="int" parameterType="string">
+        select a from latest where id = #{id}
+    </select>
+
+</mapper>

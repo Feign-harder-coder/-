@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.skh.springboot.mapper.IndustryRankingMapper">
+    <select id="getCount" resultType="int">
+        select count(1) from industry_ranking
+    </select>
+    <select id="getAll" resultType="org.skh.springboot.bean.IndustryRanking">
+        select * from industry_ranking
+    </select>
+    <select id="getUp" resultType="org.skh.springboot.bean.IndustryRanking">
+        select * from industry_ranking order by zhangfu desc limit 10
+    </select>
+    <select id="getDown" resultType="org.skh.springboot.bean.IndustryRanking">
+        select * from industry_ranking order by zhangfu asc limit 10
+    </select>
+</mapper>

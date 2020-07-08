@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.skh.springboot.mapper.UpDayMapper">
+    <select id="getall" resultType="org.skh.springboot.bean.UpdaySocket">
+        select * from upday_socket order by upday desc
+    </select>
+<select id="getDown" resultType="org.skh.springboot.bean.DownSocket">
+    select * from down_socket order by downday desc
+</select>
+    <select id="getup" resultType="org.skh.springboot.bean.UpdaySocket">
+        select * from upday_socket order by upday desc limit 10
+    </select>
+    <select id="getdown01" resultType="org.skh.springboot.bean.DownSocket">
+        select * from down_socket order by downday desc limit 10
+    </select>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.skh.springboot.mapper.AreaRankingMapper">
+
+    <resultMap id="maparea" type="org.skh.springboot.bean.MapArea">
+        <result property="provinceName" column="industry"/>
+        <result property="shopCount" column="total"/>
+        <result property="totalPrice" column="down"/>
+        <result property="orderCount" column="up"/>
+        <result property="cityKey" column="maxc2"/>
+        <result property="onlineCount" column="minc2"/>
+        <result property="provinceKey" column="zhangfu"/>
+    </resultMap>
+    <select id="getarea" resultMap="maparea">
+        select industry,total,down,up,maxc2,minc2,zhangfu from area_ranking
+    </select>
+    <select id="getCount" resultType="int">
+        select count(1) from area_ranking
+    </select>
+    <select id="getall" resultType="org.skh.springboot.bean.AreaRanking">
+        select * from area_ranking
+    </select>
+
+</mapper>

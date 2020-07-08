@@ -1,0 +1,84 @@
+
+
+
+.service {
+  background: #f7f7f7;
+	height: 200px;
+}
+
+.service .item {
+  position: relative;
+  min-height: 200px;
+  border-left: 1px solid #e8e8e8;
+  overflow: hidden;
+	height: 200px;
+}
+.service .item:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.service .item .icon_box {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -39px;
+}
+
+.service .item .icon_box span {
+  color: #48c7ec;
+  font-size: 40px;
+}
+
+.service .item .icon_box h4 {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+
+.service .item .overlay-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 0%;
+    background: #48c7ec;
+    transition: .5s cubic-bezier(0.4, 0, 1, 1);
+    opacity: 0;
+    visibility: hidden;
+}
+.service .item:hover .overlay-box {
+    height: 100%;
+    transition: .5s cubic-bezier(0.4, 0, 1, 1);
+    opacity: 1;
+    visibility: visible;
+}
+.service .item .overlay-box .icon_box {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0;
+    top: 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.service .item .overlay-box p,
+.service .item .overlay-box .icon_box h4,
+.service .item .overlay-box .default_link,
+.service .item .overlay-box .icon_box span {
+  color: #fff;
+}
+
+.service .item .overlay-box p {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
